@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+ <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  align-items: center;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.image img {
+  width: 250px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.description {
+  flex: 1;
+}
+
+.description h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.description p {
+  color: #555;
+  line-height: 1.6;
+}
+
+ </style>
+<body>
+  <div class="card">
+    <div class="image">
+      <img src="../MinhChung/avatar.webp" alt="Ảnh mô tả">
+    </div>
+    <div class="description">
+      <h2>Tiêu đề</h2>
+      <p>Meo</p>
+    </div>
+  </div>
+
+  <div class="card reverse">
+    <div class="image">
+      <img src="../MinhChung/avatar.webp" alt="Ảnh mô tả">
+    </div>
+    <div class="description">
+      <h2>Tiêu đề</h2>
+      <p>Meo</p>
+    </div>
+  </div>
+</body>
+</html>
