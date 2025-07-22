@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.audio-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+}
+
+audio {
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+}
+
+.audio-description h3 {
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.audio-description p {
+  margin: 4px 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+</style>
+<body>
+  <div class="audio-card">
+    <audio controls>
+      <source src="https://tiengdong.com/tieng-cho-sua" type="audio/mpeg" />
+      Trình duyệt không hỗ trợ thẻ audio.
+    </audio>
+    <div class="audio-description">
+      <h3>Bài hát mẫu</h3>
+    </div>
+  </div>
+</body>
+</html>
