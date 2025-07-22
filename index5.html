@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.navbar {
+  background: #333;
+  padding: 15px 0;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around; 
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background-color: #00bfff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #00bfff;
+}
+
+.nav-menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Giới thiệu</a></li>
+      <li><a href="#">Dịch vụ</a></li>
+      <li><a href="#">Tin tức</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
